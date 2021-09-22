@@ -1,8 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-
-from . import data
-from . import validate
-from . import responses
+from .helpers import data, validate, responses
 
 
 app = Flask(__name__)
