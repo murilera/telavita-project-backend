@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <style>
+      code {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Telavita Project Backend!</h1>
+      <br />
+      <!-- <p>Click <a href="/">here</a> to go home.</p> -->
+      <p>
+        To run this application, you will need Python 3+ and Pipenv installed
+        locally. If you have then, you can issue the following commands:
+      </p>
+      <p><code>pipenv install</code></p>
+      <p><code>./bootstrap.sh</code></p>
+      <br />
+      Then you can issue requests to your API. For example, with curl, you can
+      issue requests like that:
+      <code>
+        <p># adding a new employee</p>
+        curl -X POST -H "Content-Type: application/json" -d '{"full_name":
+        "Teste", "departament": "Administrativo", "dependents": 1}'
+        http://localhost:5000/colaboradores</a>
+      </code>
+      <br />
+      <code
+        ><p># listing all employees</p>
+        curl <a href="/colaboradores">http://localhost:5000/colaboradores</a></code
+      >
+      <br />
+      <code
+        ><p># listing all departaments</p>
+        curl <a href="/departamentos">http://localhost:5000/departamentos</a></code
+      >
+    </div>
+  </body>
+</html>
