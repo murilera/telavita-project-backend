@@ -1,6 +1,6 @@
 from flask import current_app as app
-from flask import Flask, render_template, jsonify, request
-from .helpers import data, validate, responses
+from flask import render_template, jsonify, request
+from .helpers import validate, responses
 from .models import departaments
 from .models import colaborators
 from . import db
